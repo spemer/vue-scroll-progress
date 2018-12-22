@@ -1,0 +1,121 @@
+/* ==============================
+  mixin default font
+============================== */
+@mixin font-stack-html() {
+  font-family: 'Noto Sans', sans-serif;
+  -moz-font-family: 'Noto Sans', sans-serif;
+  -webkit-font-family: 'Noto Sans', sans-serif;
+}
+
+
+/* ==============================
+  text rendering
+============================== */
+@mixin font-settings() {
+  direction: ltr;
+          font-feature-settings: 'liga';
+     -moz-font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale !important;
+   -webkit-font-smoothing: antialiased !important;
+          text-rendering:  optimizeLegibility !important;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip: ink;
+}
+
+
+/* ==============================
+  default font-size, line-height
+============================== */
+@function calculateRem($size) {
+  $remSize: $size / $grid4x;
+  @return $remSize * 1rem;
+}
+@mixin line-height($size) {
+  line-height: $size * 1.6;
+  line-height: calculateRem($size) * 1.6;
+}
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+  @include line-height($size);
+}
+
+
+/* ==============================
+  normalize css
+============================== */
+html {
+  outline: none;
+  color: $text333;
+  @include font-settings();
+  @include font-stack-html();
+  @include font-size($grid4x);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+/* ==============================
+    fonts
+============================== */
+a {
+  color: $brand;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+
+  &:hover {
+    color: $brand-hover;
+  }
+}
+
+h1 {
+  font-weight: 900;
+  @include font-size($grid8x);
+}
+
+h3 {
+  font-weight: 900;
+  @include font-size($grid5x);
+}
+
+p,
+li,
+span {
+  font-weight: 400;
+  @include font-size($grid4x);
+  @include line-height(18px);
+
+  b {
+      font-weight: 900;
+  }
+}
+
+::-moz-selection {
+  background-color: transparent !important;
+}
+
+::selection {
+  background-color: transparent !important;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+
+  &:focus,
+  &:active, {
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+  }
+}
+
+.code {
+  font-weight: 600;
+  -webkit-font-family: Courier, monospace;
+     -moz-font-family: Courier, monospace;
+          font-family: Courier, monospace;
+}

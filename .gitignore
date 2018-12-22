@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+.env
+*.log
+*.cache
+*.sketch
+
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+launcher/

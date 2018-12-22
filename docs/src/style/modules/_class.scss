@@ -1,0 +1,93 @@
+/* ==============================
+  box-shadow
+============================== */
+@mixin box-shadow         ($val:$grid2x, $val2:$grid4x, $color:$black08){
+  -webkit-box-shadow:  0 $val $val2 $color;
+  -ms-box-shadow:      0 $val $val2 $color;
+  -o-box-shadow:       0 $val $val2 $color;
+  box-shadow:          0 $val $val2 $color;
+}
+
+
+
+/* ==============================
+  border-radius
+============================== */
+@mixin border-radius    ($val:$grid4x){
+  border-radius:         $val;
+}
+
+
+
+/* ==============================
+  border-radius
+============================== */
+@mixin transform    ($val){
+  -webkit-transform: $val;
+          transform: $val;
+}
+
+
+
+/* ==============================
+  css grid layout
+============================== */
+@mixin grid-layout($col:3, $row:$grid16x, $gap:$grid8x){
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  grid-auto-rows: minmax($row, auto);
+  grid-gap: $gap;
+}
+
+
+
+/* ==============================
+  global btn
+============================== */
+.global__cta {
+  text-align: center;
+
+  .global__cta--btn {
+    width: 200px;
+    outline: none;
+    cursor: pointer;
+    height: $grid14x;
+    font-weight: 900;
+    margin-top: $grid8x;
+    color: $brand;
+    background-color: #fff;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    border: 2px solid $brand;
+    @include border-radius($grid16x);
+    @include box-shadow($grid2x, $grid4x);
+
+    &.ghost__white {
+      border: 2px solid #fff;
+    }
+
+    &:hover {
+      color: #fff;
+      font-weight: 900;
+      background-color: $brand;
+    }
+  }
+}
+
+
+
+/* ==============================
+  toast
+============================== */
+.toasted.primary.default {
+  font-weight: 500;
+  background: $black78;
+  padding: auto $grid4x;
+  @include font-size(12px);
+  @include box-shadow($grid, $grid2x, $black16);
+  @include border-radius($grid16x !important);
+
+  @media #{$pablet} {
+    white-space: nowrap;
+  }
+}

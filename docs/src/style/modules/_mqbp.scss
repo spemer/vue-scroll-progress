@@ -1,0 +1,25 @@
+/* ==============================
+  media query breakpoints
+============================== */
+$default: "screen and (max-width : 1024px)";
+$basic:   "screen and (max-width : 960px )";
+$tablet:  "screen and (max-width : 768px )";
+$landsc:  "screen and (max-width : 640px )";
+$middle:  "screen and (max-width : 560px )";
+$pablet:  "screen and (max-width : 420px )";
+$mobile:  "screen and (max-width : 360px )";
+$mini:    "screen and (max-width : 320px )";
+
+
+/* ==============================
+  browser specific
+============================== */
+$chrome:  "screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm)";
+$firefox: "screen and (min--moz-device-pixel-ratio:0) and (min-resolution: .001dpcm)";
+$ie:      "screen and (-ms-high-contrast: active), (-ms-high-contrast: none)";
+
+// edge
+// @supports (-ms-ime-align:auto)
+
+// safari
+// @supports (-webkit-appearance:none)

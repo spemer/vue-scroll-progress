@@ -1,0 +1,52 @@
+#app {
+  width: 100%;
+  margin: 0 auto;
+
+  .container {
+    width: 960px;
+    margin: 0 auto;
+
+    // @media #{$default} {
+    //   width: calc(100% - #{$grid32x});
+    //   padding: 0 $grid16x;
+    // }
+
+    @media #{$basic} {
+      width: calc(100% - #{$grid24x});
+      padding: 0 $grid12x;
+    }
+
+    @media #{$tablet} {
+      width: calc(100% - #{$grid16x});
+      padding: 0 $grid8x;
+
+      .page__wrapper {
+        width: 480px;
+        margin: 0 auto;
+      }
+    }
+
+    @media #{$landsc} {
+      padding: 0 $grid8x;
+
+      .page__wrapper {
+        width: 360px;
+        margin: 0 auto;
+      }
+    }
+
+    @media #{$pablet} {
+      width: calc(100% - #{$grid6x});
+      padding: 0 $grid3x;
+
+      .page__wrapper {
+        width: calc(100% - #{$grid6x});
+        margin: 0 auto;
+      }
+    }
+
+    @media #{$mobile} {
+      padding: 0 $grid3x;
+    }
+  }
+}

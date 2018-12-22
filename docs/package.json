@@ -1,0 +1,65 @@
+{
+  "name": "vue-scroll-progress-docs",
+  "description": "Simple Vue.js plugin for page scroll progress bar",
+  "version": "1.0.0",
+  "author": "spemer <ghsspower@naver.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "es6-promise": "^4.2.5",
+    "event-source-polyfill": "0.0.16",
+    "promise-polyfill": "8.1.0",
+    "v-tooltip": "^2.0.0-rc.33",
+    "vue": "^2.5.11",
+    "vue-clipboard2": "^0.2.1",
+    "vue-markdown-loader": "^2.4.1",
+    "vue-router": "^3.0.1",
+    "vue-scrollto": "^2.13.0",
+    "vue-toasted": "^1.1.24"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "node-sass": "^4.5.3",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^6.0.6",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "keywords": [
+    "VueJs",
+    "Vue",
+    "Js",
+    "JavaScript",
+    "Progress",
+    "Plugin",
+    "Library",
+    "Material",
+    "Design",
+    "Button",
+    "CSS",
+    "Spemer",
+    "Hyouk Seo",
+    "NPM",
+    "Yarn"
+  ],
+  "homepage": "https://github.com/spemer/vue-scroll-progress#readme"
+}

@@ -1,0 +1,116 @@
+.tooltip {
+  display: block !important;
+  z-index: 10000;
+  @include font-size($grid3x);
+
+  .tooltip-inner {
+    color: white;
+    font-weight: 500;
+    background: $black78;
+    padding: $grid2x $grid4x !important;
+    @include font-size(12px);
+    @include border-radius($grid32x !important);
+    @include box-shadow($grid, $grid2x, $black16);
+  }
+
+  .tooltip-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: $grid;
+    border-color: $black78;
+    z-index: 10000;
+  }
+
+  &[x-placement^="top"] {
+    margin-bottom: $grid2x;
+
+    .tooltip-arrow {
+      border-width: $grid $grid 0 $grid;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      bottom: -#{$grid};
+      left: calc(50% - #{$grid});
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^="bottom"] {
+    margin-top: $grid2x;
+
+    .tooltip-arrow {
+      border-width: 0 $grid $grid $grid;
+      border-left-color: transparent !important;
+      border-right-color: transparent !important;
+      border-top-color: transparent !important;
+      top: -#{$grid};
+      left: calc(50% - #{$grid});
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  &[x-placement^="right"] {
+    margin-left: $grid2x;
+
+    .tooltip-arrow {
+      border-width: $grid $grid $grid 0;
+      border-left-color: transparent !important;
+      border-top-color: transparent !important;
+      border-bottom-color: transparent !important;
+      left: -#{$grid};
+      top: calc(50% - #{$grid});
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &[x-placement^="left"] {
+    margin-right: $grid2x;
+
+    .tooltip-arrow {
+      border-width: $grid 0 $grid $grid;
+      border-top-color: transparent !important;
+      border-right-color: transparent !important;
+      border-bottom-color: transparent !important;
+      right: -#{$grid};
+      top: calc(50% - #{$grid});
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  &.popover {
+    $color: #f9f9f9;
+
+    .popover-inner {
+      background: $color;
+      color: black;
+      padding: $grid6x;
+      border-radius: $grid;
+      -webkit-box-shadow: 0 $grid $grid8x rgba(black, .1);
+              box-shadow: 0 $grid $grid8x rgba(black, .1);
+    }
+
+    .popover-arrow {
+      border-color: $color;
+    }
+  }
+
+  &[aria-hidden='true'] {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .25s, visibility .25s;
+            transition: opacity .25s, visibility .25s;
+  }
+
+  &[aria-hidden='false'] {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .25s, visibility .25s;
+            transition: opacity .25s, visibility .25s;
+  }
+}

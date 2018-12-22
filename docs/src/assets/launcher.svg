@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="400px" viewBox="0 0 400 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>launcher</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M153.833112,-6.21504185e-15 L246.166888,6.21504185e-15 C299.658012,-3.61111829e-15 319.055187,5.56953667 338.610742,16.0279622 C358.166298,26.4863878 373.513612,41.8337022 383.972038,61.3892578 C394.430463,80.9448133 400,100.341988 400,153.833112 L400,246.166888 C400,299.658012 394.430463,319.055187 383.972038,338.610742 C373.513612,358.166298 358.166298,373.513612 338.610742,383.972038 C319.055187,394.430463 299.658012,400 246.166888,400 L153.833112,400 C100.341988,400 80.9448133,394.430463 61.3892578,383.972038 C41.8337022,373.513612 26.4863878,358.166298 16.0279622,338.610742 C5.56953667,319.055187 2.4074122e-15,299.658012 -4.14336123e-15,246.166888 L4.14336123e-15,153.833112 C-2.4074122e-15,100.341988 5.56953667,80.9448133 16.0279622,61.3892578 C26.4863878,41.8337022 41.8337022,26.4863878 61.3892578,16.0279622 C80.9448133,5.56953667 100.341988,3.61111829e-15 153.833112,-6.21504185e-15 Z" id="path-1"></path>
+    </defs>
+    <g id="launcher" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#42B883" fill-rule="nonzero" xlink:href="#path-1"></use>
+            <rect id="bar" fill-opacity="0.32" fill="#000000" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="0" width="280" height="40"></rect>
+            <rect id="bottom" fill-opacity="0.64" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="240" width="400" height="160"></rect>
+        </g>
+    </g>
+</svg>

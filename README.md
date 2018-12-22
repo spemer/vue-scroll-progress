@@ -5,7 +5,7 @@
 [![Gzipsize](https://img.badgesize.io/spemer/vue-scroll-progress/master/src/vue-scroll-progress.js?compression=gzip)](https://www.npmjs.com/package/vue-scroll-progress)
 [![Version](https://img.shields.io/npm/v/vue-scroll-progress.svg)](https://www.npmjs.com/package/vue-scroll-progress)
 [![License](https://img.shields.io/npm/l/vue-scroll-progress.svg)](https://github.com/spemer/vue-scroll-progress)
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vuejs/awesome-vue#miscellaneous)
+<!-- [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vuejs/awesome-vue#miscellaneous) -->
 
 [Live Demo](https://spemer.github.io/vue-scroll-progress/)
 
@@ -30,7 +30,7 @@ yarn add vue-scroll-progress
 ### main.js
 
 ``` javascript
-// main.js
+// YourComponent.vue or main.js for global usage
 import Vue from 'vue'
 import vueScrollProgress from 'vue-scroll-progress'
 
@@ -39,27 +39,11 @@ Vue.use(vueScrollProgress)
 
 ### Use in component
 
-``` javascript
+``` html
 // .vue template
 <template>
-  <my-component ripple></my-component>
+  <vueScrollProgress></vueScrollProgress>
 </template>
-```
-
-### Set ripple style, and customize as you want(Optional)
-
-``` css
-<style>
-/*
-play with some lines below
-*/
-[ripple] .ripple--container .ripple--body {
-  opacity: 0.5 !important;
-  background-color: rgba(0, 0, 0, 0.1) !important;
-  -webkit-animation: rippler 1000ms;
-          animation: rippler 1000ms;
-}
-</style>
 ```
 
 ## Author

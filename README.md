@@ -40,7 +40,7 @@ Vue.use(VueScrollProgress)
 ### Use in component
 
 ``` html
-// .vue template
+<!-- .vue template -->
 <template>
   <VueScrollProgress></VueScrollProgress>
 </template>
@@ -50,9 +50,7 @@ Vue.use(VueScrollProgress)
 
 ``` css
 <style>
-/*
-play with some lines below
-*/
+/* play with some lines below */
 #progress-container-el {
   /* background */
   background-color: #f4f4f4 !important;

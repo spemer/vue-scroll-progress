@@ -5,6 +5,8 @@
     Readme
     Install
     Docs
+    Placeholder
+    TopBtn
     Footer
 </template>
 
@@ -15,6 +17,8 @@ import Hero from '../components/Hero'
 import Readme from '../components/Readme'
 import Install from '../components/Install'
 import Docs from '../components/Docs'
+import Placeholder from '../components/Placeholder'
+import TopBtn from '../components/TopBtn'
 import Footer from '../components/Footer'
 
 export default {
@@ -24,6 +28,8 @@ export default {
     Readme,
     Install,
     Docs,
+    Placeholder,
+    TopBtn,
     Footer,
   }
 }

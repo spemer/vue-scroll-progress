@@ -2,6 +2,7 @@
 
 
 cd docs
+npm run dev
 
 # build
 npm run build

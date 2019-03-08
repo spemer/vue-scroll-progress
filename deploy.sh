@@ -1,12 +1,12 @@
 #!/bin/bash
 
-# move to docs dir
+
 cd docs
 
 # build
 npm run build
 
-# back to root dir
+
 cd -
 
 # commit

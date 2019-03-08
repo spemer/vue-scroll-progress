@@ -11,5 +11,5 @@ cd -
 
 # commit
 git add .
-git commit -m 'Deploy'
+git commit -m 'BLD deploy'
 git push

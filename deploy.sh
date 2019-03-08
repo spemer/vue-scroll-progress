@@ -11,5 +11,5 @@ cd -
 
 # commit
 git add .
-git commit -m 'deploy'
+git commit -m 'Deploy'
 git push

@@ -13,3 +13,6 @@ cd -
 git add .
 git commit -m 'BLD deploy'
 git push
+
+
+exit

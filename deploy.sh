@@ -9,6 +9,7 @@ npm run build
 cd -
 
 # get commit message
+printf "\n"
 read -p "Enter commit message: " commitmsg
 
 # commit

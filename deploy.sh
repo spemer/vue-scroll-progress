@@ -1,11 +1,13 @@
 #!/bin/bash
 
+# docs dir
 cd docs
 npm run dev
 
 # build
 npm run build
 
+# root dir
 cd -
 
 # get commit message

@@ -5,7 +5,7 @@ echo "=============================="
 echo ${prjname}
 echo "=============================="
 
-# docs dir
+# docs dir && run on local server
 cd docs
 npm run dev
 

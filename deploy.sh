@@ -1,4 +1,9 @@
 #!/bin/bash
+prjname="vue-scroll-progress"
+
+echo "=============================="
+echo ${prjname}
+echo "=============================="
 
 # docs dir
 cd docs

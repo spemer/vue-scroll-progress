@@ -1,8 +1,6 @@
 #!/bin/bash
-prjname="vue-scroll-progress"
-
 echo "=============================="
-echo ${prjname}
+echo "${PWD##*/}"
 echo "=============================="
 
 # docs dir && run on local server

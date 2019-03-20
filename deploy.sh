@@ -18,17 +18,17 @@ cd -
 # get commit message
 printf "\n"
 IFS= read -r -p "Enter commit message: " commitmsg
-git add .
 
-# commit
+# if commitmsg empty
 if [ -z "$commitmsg" ]
 then
-    echo "commit message is empty"
-    git commit -m "Add files via upload"
-else
-    git commit -m "$commitmsg"
+    echo "Commit message is empty"
+    commitmsg="Add files via upload"
 fi
 
+printf "\n"
+git add .
+git commit -m "$commitmsg"
 git push
 
 exit

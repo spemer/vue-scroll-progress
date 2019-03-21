@@ -3,11 +3,13 @@ echo "=============================="
 echo "${PWD##*/}"
 echo "=============================="
 
-# docs dir && run on local server
+# docs dir
 cd docs
+
+# serve with hot reload at localhost:4020
 npm run dev
 
-# build
+# build for production with minification
 npm run build
 
 # root dir

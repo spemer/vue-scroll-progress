@@ -81,6 +81,21 @@ git_push() {
 }
 
 #============================================================
+# npm publish
+#============================================================
+npm_publish() {
+  while true; do
+    printf "\n"
+    read -p "${BOLD}npm publish? (Y/n)${RESET}" yn
+    case ${yn} in
+      [Yy]* ) npm publish; break;;
+      [Nn]* ) return 0;;
+      * ) echo "Please answer yes or no.";;
+    esac
+  done
+}
+
+#============================================================
 # main
 #============================================================
 main() {
@@ -88,6 +103,7 @@ main() {
   npm_run_build
   git_commit
   git_push
+  npm_publish
 }
 
 main

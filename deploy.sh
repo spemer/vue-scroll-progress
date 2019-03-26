@@ -1,6 +1,7 @@
 #!/bin/bash
 BOLD=$(tput bold)
 RESET=$(tput sgr0)
+GREEN=$(tput setaf 2)
 
 echo "============================================================"
 echo "${BOLD}${PWD##*/}${RESET}"
@@ -12,7 +13,7 @@ echo "============================================================"
 npm_run_dev() {
   while true; do
     printf "\n"
-    read -p "${BOLD}npm run dev? (Y/n)${RESET}" yn
+    read -p "${BOLD}${GREEN}npm run dev? (Y/n) ${RESET}" yn
     case ${yn} in
       [Yy]* ) cd docs && npm run dev && cd -; break;;
       [Nn]* ) return 0;;
@@ -27,7 +28,7 @@ npm_run_dev() {
 npm_run_build() {
   while true; do
     printf "\n"
-    read -p "${BOLD}npm run build? (Y/n)${RESET}" yn
+    read -p "${BOLD}${GREEN}npm run build? (Y/n) ${RESET}" yn
     case ${yn} in
       [Yy]* ) cd docs && npm run build && cd -; break;;
       [Nn]* ) return 0;;
@@ -42,7 +43,7 @@ npm_run_build() {
 git_commit() {
   while true; do
     printf "\n"
-    read -p "${BOLD}git commit? (Y/n)${RESET}" yn
+    read -p "${BOLD}${GREEN}git commit? (Y/n) ${RESET}" yn
     case ${yn} in
       [Yy]* )
         IFS= read -r -p "${BOLD}Enter commit message: ${RESET}" commitmsg
@@ -50,7 +51,7 @@ git_commit() {
         # if commitmsg empty
         if [ -z "$commitmsg" ]
         then
-          echo "${BOLD}Commit message is empty${RESET}"
+          echo "${BOLD}${GREEN}Commit message is empty.${RESET}"
           commitmsg="Add files via upload"
         fi
 
@@ -71,7 +72,7 @@ git_commit() {
 git_push() {
   while true; do
     printf "\n"
-    read -p "${BOLD}git push? (Y/n)${RESET}" yn
+    read -p "${BOLD}${GREEN}git push? (Y/n) ${RESET}" yn
     case ${yn} in
       [Yy]* ) git push; break;;
       [Nn]* ) return 0;;
@@ -86,7 +87,7 @@ git_push() {
 npm_publish() {
   while true; do
     printf "\n"
-    read -p "${BOLD}npm publish? (Y/n)${RESET}" yn
+    read -p "${BOLD}${GREEN}npm publish? (Y/n) ${RESET}" yn
     case ${yn} in
       [Yy]* ) npm publish; break;;
       [Nn]* ) return 0;;

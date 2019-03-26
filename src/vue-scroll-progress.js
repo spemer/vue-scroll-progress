@@ -4,11 +4,9 @@ var VueScrollProgress = {
       mounted: function mounted() {
         var progressContainerEl,
           progressEl,
-          height,
           windowScrollPixels,
-          windowScrollPercents
-
-        // TODO: enable bottom scroll bar
+          windowScrollPercents,
+          height
 
         progressContainerEl = document.createElement('div')
         progressContainerEl.id = 'progress-container-el'
@@ -29,8 +27,34 @@ var VueScrollProgress = {
 
         windowScrollPixels = 0
         windowScrollPercents = 0
-        height = (document.documentElement.scrollHeight -
-          document.documentElement.clientHeight)
+
+        function getHeight() {
+          height = (document.documentElement.scrollHeight - document.documentElement.clientHeight)
+        }
+
+        const debounce = (func, wait, immediate) => {
+          var timeout
+          return () => {
+            const context = this,
+              args = arguments
+            const later = function () {
+              timeout = null
+              if (!immediate) func.apply(context, args)
+            }
+            const callNow = immediate && !timeout
+            clearTimeout(timeout)
+            timeout = setTimeout(later, wait)
+            if (callNow) func.apply(context, args)
+          }
+        }
+
+        var h = document.body
+        h.addEventListener('resize', debounce(() => {
+          getHeight()
+          console.log(height)
+        }, 200, false), false)
+
+        getHeight()
 
         window.addEventListener('scroll', () => {
           windowScrollPixels = (document.body.scrollTop ||

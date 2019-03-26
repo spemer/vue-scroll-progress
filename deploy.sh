@@ -1,6 +1,9 @@
 #!/bin/bash
+BOLD=$(tput bold)
+RESET=$(tput sgr0)
+
 echo "=============================="
-echo "${PWD##*/}"
+echo "${BOLD}${PWD##*/}${RESET}"
 echo "=============================="
 
 # docs dir
@@ -17,12 +20,12 @@ cd -
 
 # get commit message
 printf "\n"
-IFS= read -r -p "Enter commit message: " commitmsg
+IFS= read -r -p "${BOLD}Enter commit message: ${RESET}" commitmsg
 
 # if commitmsg empty
 if [ -z "$commitmsg" ]
 then
-    echo "Commit message is empty"
+    echo "${BOLD}Commit message is empty${RESET}"
     commitmsg="Add files via upload"
 fi
 

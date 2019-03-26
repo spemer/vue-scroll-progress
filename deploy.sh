@@ -14,7 +14,7 @@ npm_run_dev() {
     printf "\n"
     read -p "${BOLD}npm run dev? (Y/n)${RESET}" yn
     case ${yn} in
-      [Yy]* ) cd docs && npm run dev; break;;
+      [Yy]* ) cd docs && npm run dev && cd -; break;;
       [Nn]* ) return 0;;
       * ) echo "Please answer yes or no.";;
     esac
@@ -29,7 +29,7 @@ npm_run_build() {
     printf "\n"
     read -p "${BOLD}npm run build? (Y/n)${RESET}" yn
     case ${yn} in
-      [Yy]* ) npm run build && cd -; break;;
+      [Yy]* ) cd docs && npm run build && cd -; break;;
       [Nn]* ) return 0;;
       * ) echo "Please answer yes or no.";;
     esac

@@ -37,9 +37,9 @@ npm_run_build() {
 }
 
 #==================================================================================================
-# commit && push
+# git commit
 #==================================================================================================
-commit_push() {
+git_commit() {
   while true; do
     printf "\n"
     read -p "${BOLD}commit? (Y/n)${RESET}" yn
@@ -57,9 +57,23 @@ commit_push() {
         printf "\n"
         git add .
         git commit -m "$commitmsg"
-        git push
         break;;
 
+      [Nn]* ) return 0;;
+      * ) echo "Please answer yes or no.";;
+    esac
+  done
+}
+
+#==================================================================================================
+# git push
+#==================================================================================================
+git_push() {
+  while true; do
+    printf "\n"
+    read -p "${BOLD}git push? (Y/n)${RESET}" yn
+    case ${yn} in
+      [Yy]* ) git push; break;;
       [Nn]* ) return 0;;
       * ) echo "Please answer yes or no.";;
     esac
@@ -72,26 +86,8 @@ commit_push() {
 main() {
   npm_run_dev
   npm_run_build
-  commit_push
+  git_commit
+  git_push
 }
 
 main
-
-
-# get commit message
-printf "\n"
-# IFS= read -r -p "${BOLD}Enter commit message: ${RESET}" commitmsg
-
-# if commitmsg empty
-# if [ -z "$commitmsg" ]
-# then
-#     echo "${BOLD}Commit message is empty${RESET}"
-#     commitmsg="Add files via upload"
-# fi
-
-# printf "\n"
-# git add .
-# git commit -m "$commitmsg"
-# git push
-
-# exit

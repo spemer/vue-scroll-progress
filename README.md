@@ -53,9 +53,9 @@ Vue.use(VueScrollProgress)
 /* play with some lines below */
 #progress-container-el {
   /* background */
-  background-color: #f4f4f4 !important;
+  background-color: transparent !important;
+  top: calc(100% - 4px) !important;
 }
-
 #progress-el {
   /* progress bar */
   background-color: red !important;

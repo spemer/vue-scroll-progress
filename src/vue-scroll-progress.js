@@ -3,10 +3,12 @@ var VueScrollProgress = {
     Vue.mixin({
       mounted: function mounted() {
         var progressContainerEl,
-            progressEl,
-            height,
-            windowScrollPixels,
-            windowScrollPercents
+          progressEl,
+          height,
+          windowScrollPixels,
+          windowScrollPercents
+
+        // TODO: enable bottom scroll bar
 
         progressContainerEl = document.createElement('div')
         progressContainerEl.id = 'progress-container-el'
@@ -27,17 +29,17 @@ var VueScrollProgress = {
 
         windowScrollPixels = 0
         windowScrollPercents = 0
-        height = (document.documentElement.scrollHeight
-          - document.documentElement.clientHeight)
+        height = (document.documentElement.scrollHeight -
+          document.documentElement.clientHeight)
 
         window.addEventListener('scroll', () => {
-          windowScrollPixels = (document.body.scrollTop
-            || document.documentElement.scrollTop)
+          windowScrollPixels = (document.body.scrollTop ||
+            document.documentElement.scrollTop)
           windowScrollPercents = (windowScrollPixels / height) * 100
           progressEl.style.width = windowScrollPercents + '%'
         })
 
-        if (! document.getElementById('progress-container-el')) {
+        if (!document.getElementById('progress-container-el')) {
           progressContainerEl.appendChild(progressEl)
           document.body.appendChild(progressContainerEl)
         }

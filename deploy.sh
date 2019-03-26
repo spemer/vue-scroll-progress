@@ -42,7 +42,7 @@ npm_run_build() {
 git_commit() {
   while true; do
     printf "\n"
-    read -p "${BOLD}commit? (Y/n)${RESET}" yn
+    read -p "${BOLD}git commit? (Y/n)${RESET}" yn
     case ${yn} in
       [Yy]* )
         IFS= read -r -p "${BOLD}Enter commit message: ${RESET}" commitmsg

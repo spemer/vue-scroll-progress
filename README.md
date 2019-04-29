@@ -9,6 +9,8 @@
 
 [Live Demo](https://spemer.github.io/vue-scroll-progress/)
 
+![vue-scroll-progress.gif](https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif)
+
 ## Installation
 
 ``` bash

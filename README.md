@@ -9,9 +9,9 @@
 
 [Live Demo](https://spemer.github.io/vue-scroll-progress/)
 
-<!-- ![vue-scroll-progress.gif](https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif) -->
+<!-- ![vue-scroll-progress.gif](https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif?raw=true) -->
 
-<img src="https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif" height="25%" width="25%">
+<img src="https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif?raw=true" height="25%" width="25%">
 
 ## Installation
 

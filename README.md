@@ -11,7 +11,7 @@
 
 <!-- ![vue-scroll-progress.gif](https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif) -->
 
-<img src="https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif" height="75%" width="75%">
+<img src="https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif" height="50%" width="50%">
 
 ## Installation
 

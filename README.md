@@ -13,7 +13,7 @@
 
 <img src="https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif?raw=true" height="25%" width="25%">
 
-## ✔ Installation
+## Installation
 
 ``` bash
 npm i vue-scroll-progress --save
@@ -29,7 +29,7 @@ yarn add vue-scroll-progress
 [UNPKG](https://unpkg.com/vue-scroll-progress/),
 [bundle.run](https://bundle.run/vue-scroll-progress)
 
-## ✔ Usage
+## Usage
 
 ### main.js
 
@@ -67,6 +67,6 @@ Vue.use(VueScrollProgress)
 </style>
 ```
 
-## ✔ Author
+## Author
 
 [Hyouk Seo(Spemer)](https://github.com/spemer)

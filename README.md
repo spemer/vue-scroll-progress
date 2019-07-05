@@ -2,15 +2,13 @@
 
 > Simple Vue.js plugin for page scroll progress bar
 
+[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
 [![Gzipsize](https://img.badgesize.io/spemer/vue-scroll-progress/master/src/vue-scroll-progress.js?compression=gzip)](https://www.npmjs.com/package/vue-scroll-progress)
 [![Version](https://img.shields.io/npm/v/vue-scroll-progress.svg)](https://www.npmjs.com/package/vue-scroll-progress)
-[![License](https://img.shields.io/npm/l/vue-scroll-progress.svg)](https://github.com/spemer/vue-scroll-progress)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/vuejs/awesome-vue#progress-bar)
-[![vue2](https://img.shields.io/badge/vue-2.x-brightgreen.svg)](https://vuejs.org/)
+[![License](https://img.shields.io/npm/l/vue-scroll-progress.svg)](https://github.com/spemer/vue-scroll-progress)
 
 [Live Demo](https://spemer.github.io/vue-scroll-progress/)
-
-<!-- ![vue-scroll-progress.gif](https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif?raw=true) -->
 
 <img src="https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/vue-scroll-progress.gif?raw=true" height="25%" width="25%">
 

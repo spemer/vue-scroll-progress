@@ -51,7 +51,6 @@ var VueScrollProgress = {
         var h = document.body
         h.addEventListener('resize', debounce(() => {
           getHeight()
-          // console.log(height)
         }, 200, false), false)
 
         getHeight()

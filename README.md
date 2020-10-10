@@ -14,11 +14,11 @@
 
 ## Installation
 
-``` bash
+```bash
 npm i vue-scroll-progress --save
 ```
 
-``` bash
+```bash
 yarn add vue-scroll-progress
 ```
 
@@ -32,17 +32,17 @@ yarn add vue-scroll-progress
 
 ### main.js
 
-``` javascript
+```javascript
 // YourComponent.vue or main.js for global usage
-import Vue from 'vue'
-import VueScrollProgress from 'vue-scroll-progress'
+import Vue from "vue";
+import VueScrollProgress from "vue-scroll-progress";
 
-Vue.use(VueScrollProgress)
+Vue.use(VueScrollProgress);
 ```
 
 ### Use in component
 
-``` html
+```html
 <!-- .vue template -->
 <template>
   <VueScrollProgress></VueScrollProgress>
@@ -51,13 +51,13 @@ Vue.use(VueScrollProgress)
 
 ### Set progress bar style, and customize as you want(Optional)
 
-``` css
+```css
 <style>
 /* play with some lines below */
 #progress-container-el {
   /* background */
   background-color: transparent !important;
-  top: calc(100% - 4px) !important;
+  top: calc(100% - 4px) !important; /* remove if Vue 3.x */
 }
 #progress-el {
   /* progress bar */

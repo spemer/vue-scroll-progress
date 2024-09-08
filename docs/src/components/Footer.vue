@@ -19,48 +19,47 @@
 </template>
 
 <script>
-import {globalVar} from '../globalVar'
+import { globalVar } from "../globalVar";
 
 export default {
-  name: 'footer-el',
+  name: "footer-el",
 
-  data () {
+  data() {
     return {
-      year: '',
+      year: "",
 
       snsList: {
         facebook: {
           href: globalVar.fbURL,
-          iconID : 'fbIcon',
-          iconClass : 'facebook-square',
-          title: 'Facebook'
+          iconID: "fbIcon",
+          iconClass: "facebook-square",
+          title: "Facebook"
         },
         instagram: {
           href: globalVar.igURL,
-          iconID : 'igIcon',
-          iconClass : 'instagram',
-          title: 'Instagram'
+          iconID: "igIcon",
+          iconClass: "instagram",
+          title: "Instagram"
         },
         github: {
           href: globalVar.ghURL,
-          iconID : 'ghIcon',
-          iconClass : 'github',
-          title: 'Github'
+          iconID: "ghIcon",
+          iconClass: "github",
+          title: "Github"
         }
       }
-    }
+    };
   },
 
   computed: {
     thisYear() {
-      return this.year = new Date().getFullYear()
+      return (this.year = new Date().getFullYear());
     }
-  },
-}
+  }
+};
 </script>
 
 <style lang="scss">
-
 #footer {
   width: 100%;
   margin-top: $grid8x;
@@ -72,30 +71,26 @@ export default {
     text-align: center;
 
     .footer__sns {
-
       .footer__sns--link {
         color: $text999;
         margin-top: $grid4x;
-        transition: all .25s ease;
+        transition: all 0.25s ease;
         padding: 0 $grid4x $grid4x $grid4x;
         @include font-size($grid6x);
 
         &#fbIcon {
-
           &:hover {
             color: $fbIcon;
           }
         }
 
         &#igIcon {
-
           &:hover {
             color: $igIcon;
           }
         }
 
         &#ghIcon {
-
           &:hover {
             color: $ghIcon;
           }
@@ -104,7 +99,6 @@ export default {
     }
 
     .footer__copyright {
-
       .footer__copyright--text {
         @include font-size($grid3x);
       }

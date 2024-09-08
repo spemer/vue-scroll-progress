@@ -7,19 +7,21 @@
     Docs
     Placeholder
     TopBtn
+    GoogleAds
     Footer
 </template>
 
 <script>
-import Vue from 'vue'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import Readme from '../components/Readme'
-import Install from '../components/Install'
-import Docs from '../components/Docs'
-import Placeholder from '../components/Placeholder'
-import TopBtn from '../components/TopBtn'
-import Footer from '../components/Footer'
+import Vue from "vue";
+import Header from "../components/Header";
+import Hero from "../components/Hero";
+import Readme from "../components/Readme";
+import Install from "../components/Install";
+import Docs from "../components/Docs";
+import Placeholder from "../components/Placeholder";
+import TopBtn from "../components/TopBtn";
+import GoogleAds from "../components/GoogleAds";
+import Footer from "../components/Footer";
 
 export default {
   components: {
@@ -30,9 +32,10 @@ export default {
     Docs,
     Placeholder,
     TopBtn,
-    Footer,
+    GoogleAds,
+    Footer
   }
-}
+};
 </script>
 
 <style lang="scss">

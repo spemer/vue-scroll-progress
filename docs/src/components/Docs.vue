@@ -23,24 +23,24 @@
 </template>
 
 <script>
-import {globalVar} from '../globalVar.js'
+import { globalVar } from "../globalVar.js";
 
 export default {
-  data () {
+  data() {
     return {
       url: {
         GitHub: globalVar.githubURL,
         NPM: globalVar.npmURL,
-        Yarn: globalVar.yarnURL,
+        Yarn: globalVar.yarnURL
       },
       cdn: {
         jsDelivr: globalVar.jsDelivr,
         UNPKG: globalVar.UNPKG,
-        Bundlr: globalVar.Bundlr,
+        Bundlr: globalVar.Bundlr
       }
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -48,7 +48,6 @@ export default {
   margin: $grid16x 0 $grid8x;
 
   .container {
-
     .docs__link--wrapper {
       text-align: center;
       margin: $grid8x 0 $grid4x;
@@ -58,9 +57,7 @@ export default {
       }
 
       .docs__link--link {
-
         &:not(:last-child) {
-
           &::after {
             cursor: text;
             content: " | ";

@@ -1,25 +1,15 @@
 @charset 'UTF-8';
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-
 /* ==============================
   basic modules
 ============================== */
-@import
-  './modules/grid',
-  './modules/color',
-  './modules/mqbp',
-  './modules/global',
-  './modules/class',
-  './modules/layout';
-
+@import "./modules/grid", "./modules/color", "./modules/mqbp", "./modules/global", "./modules/class", "./modules/layout";
 
 /* ==============================
   components
 ============================== */
-@import
-  './components/tooltip';
-
+@import "./components/tooltip";
 
 /* ==============================
   pages specific

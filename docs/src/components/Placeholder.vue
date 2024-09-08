@@ -8,16 +8,16 @@
 
 <script>
 export default {
-  name: 'placeholder',
+  name: "placeholder",
 
-  data () {
+  data() {
     return {
       textLoop: {
-        text: 'Watch the top of the page while scrolling!',
+        text: "Watch the top of the page while scrolling!"
       }
-    }
-  },
-}
+    };
+  }
+};
 </script>
 
 <style lang="scss">

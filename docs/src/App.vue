@@ -4,11 +4,11 @@
 </template>
 
 <script>
-import Home from './page/Home'
+import Home from "./page/Home";
 
 export default {
   components: {
     Home
   }
-}
+};
 </script>

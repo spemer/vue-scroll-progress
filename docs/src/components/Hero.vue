@@ -9,21 +9,18 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
-      metaURI: 'https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/metacard.png?raw=true'
-    }
-  },
-
-}
+      metaURI:
+        "https://github.com/spemer/vue-scroll-progress/blob/master/docs/src/assets/metacard.png?raw=true"
+    };
+  }
+};
 </script>
 
 <style lang="scss">
-
 #hero {
-
   .hero__container {
-
     .hero__container--img {
       margin: 0 auto;
       display: block;

@@ -3,23 +3,22 @@
 </template>
 
 <script>
-import Readme from './md/README.md'
+import Readme from "./md/README.md";
 
 export default {
   components: {
     Readme
   },
 
-  mounted () {
-    let getAnchorTags = document.querySelectorAll('.readme p a');
+  mounted() {
+    let getAnchorTags = document.querySelectorAll(".readme p a");
 
     [...getAnchorTags].forEach(anchor => {
-      let getAnchorTarget = anchor.getAttribute('target')
-      if(!getAnchorTarget)
-        anchor.setAttribute('target', '_blank')
-    })
-  },
-}
+      let getAnchorTarget = anchor.getAttribute("target");
+      if (!getAnchorTarget) anchor.setAttribute("target", "_blank");
+    });
+  }
+};
 </script>
 
 <style lang="scss">

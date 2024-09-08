@@ -12,37 +12,33 @@
 </template>
 
 <script>
-import {globalVar} from '../globalVar.js'
+import { globalVar } from "../globalVar.js";
 
 export default {
-  data () {
+  data() {
     return {
       dl: {
         npm: globalVar.npm,
-        yarn: globalVar.yarn,
-      },
-    }
+        yarn: globalVar.yarn
+      }
+    };
   },
 
   methods: {
-    toast () {
-      this.$toasted.show('Copied!', {
+    toast() {
+      this.$toasted.show("Copied!", {
         theme: "primary",
         position: "bottom-center",
-        duration : 2000
-      })
+        duration: 2000
+      });
     }
-  },
-
-}
+  }
+};
 </script>
 
 <style lang="scss">
-
 #install {
-
   .container {
-
     .install__code--wrapper {
       display: table;
       width: $grid96x;

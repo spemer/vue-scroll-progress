@@ -8,22 +8,19 @@
 
 <script>
 export default {
-  name: 'topBtn',
+  name: "topBtn",
 
-  data () {
+  data() {
     return {
-      tooltip: 'Top',
-    }
+      tooltip: "Top"
+    };
   },
 
-  methods: {
-  },
-
-}
+  methods: {}
+};
 </script>
 
 <style lang="scss">
-
 #top {
   margin-bottom: $grid32x;
 
@@ -40,7 +37,7 @@ export default {
     margin-top: $grid16x;
     border: $brand 1px solid;
     background-color: #fff;
-    transition: all .25s ease;
+    transition: all 0.25s ease;
     @include border-radius($grid32x);
 
     &:hover {

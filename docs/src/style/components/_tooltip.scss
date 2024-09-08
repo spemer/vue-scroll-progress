@@ -91,8 +91,8 @@
       color: black;
       padding: $grid6x;
       border-radius: $grid;
-      -webkit-box-shadow: 0 $grid $grid8x rgba(black, .1);
-              box-shadow: 0 $grid $grid8x rgba(black, .1);
+      -webkit-box-shadow: 0 $grid $grid8x rgba(black, 0.1);
+      box-shadow: 0 $grid $grid8x rgba(black, 0.1);
     }
 
     .popover-arrow {
@@ -100,17 +100,17 @@
     }
   }
 
-  &[aria-hidden='true'] {
+  &[aria-hidden="true"] {
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: opacity .25s, visibility .25s;
-            transition: opacity .25s, visibility .25s;
+    -webkit-transition: opacity 0.25s, visibility 0.25s;
+    transition: opacity 0.25s, visibility 0.25s;
   }
 
-  &[aria-hidden='false'] {
+  &[aria-hidden="false"] {
     visibility: visible;
     opacity: 1;
-    -webkit-transition: opacity .25s, visibility .25s;
-            transition: opacity .25s, visibility .25s;
+    -webkit-transition: opacity 0.25s, visibility 0.25s;
+    transition: opacity 0.25s, visibility 0.25s;
   }
 }
